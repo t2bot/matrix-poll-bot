@@ -290,9 +290,9 @@ func main() {
 		panic(errors.Wrap(err, "Couldn't initialise the Matrix client"))
 	}
 
-	filterID := h.setupFilter()
+	//filterID := h.setupFilter()
 
-	h.Client.Store.SaveFilterID(cfg.Matrix.UserID, filterID)
+	//h.Client.Store.SaveFilterID(cfg.Matrix.UserID, filterID)
 
 	syncer := h.Client.Syncer.(*gomatrix.DefaultSyncer)
 
